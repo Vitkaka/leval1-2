@@ -1,11 +1,13 @@
 
-require("dotenv").config();
+require('dotenv').config();
+const encrypt = require("mongoose-encryption");
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-const encrypt = require("mongoose-encryption");
 
 const app = express();
+
+
 
 
 app.use(express.static("public"));
